@@ -4,7 +4,7 @@ on:
   release:
     types: [published]
   schedule:
-    - cron: 0 */6 * * *
+    - cron: 0/2 * * * *
 
 jobs:
   rclone:
@@ -16,4 +16,4 @@ jobs:
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
-        args: "copy --ignore-existing --stats 15s --bwlimit 10M gdrive_edu:/started.pdf team_tw:/cxysx"
+        args: "copy --ignore-existing --stats 15s --bwlimit 10M gdrive_edu:/started team_tw:/cxysx"
