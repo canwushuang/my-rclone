@@ -16,4 +16,4 @@ jobs:
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
-        args: "copy -v --ignore-existing --stats 15s --bwlimit 6M gdrive_edu:/2019年\ 程序员数学\（基础+进阶\） team_tw:/cxysx"
+        args: "copy -v --ignore-existing --stats 15s --bwlimit 6M gdrive_edu:/2019年\ 程序员数学（基础+进阶） team_tw:/cxysx"
