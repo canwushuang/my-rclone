@@ -16,4 +16,4 @@ jobs:
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
-        args: "copy --ignore-existing --stats 15s --bwlimit 10M gdrive_edu:/git_rclone team_tw:/git_rclone"
+        args: "copy --ignore-existing --stats 15s --bwlimit 6M gdrive_edu:/git_rclone team_tw:/git_rclone"
